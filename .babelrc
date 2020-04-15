@@ -1,0 +1,10 @@
+{
+	"presets": ["@babel/preset-env"],
+	"plugins": [
+		"@babel/proposal-dynamic-import",
+		"@babel/proposal-class-properties",
+		"@babel/proposal-private-methods",
+		"@babel/proposal-nullish-coalescing-operator",
+		"@babel/proposal-optional-chaining"
+	]
+}
