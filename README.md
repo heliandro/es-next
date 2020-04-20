@@ -1,21 +1,21 @@
-## ES NEXT
+# ES NEXT
 
 examples of next features of JavaScript.
 
-# Requisites
+## Requisites
 * Nodejs v12.16.2+
 
-# Instalation
+## Instalation
 
 for installation, run the following command:
 > npm install
 
-# How to use
+## How to use
 
 for test an example, see how to execute:
 > npx babel-node ./src/es2020/FILE-NAME.js
 
-# List of ES2020 examples
+## List of ES2020 examples
 
 * [Nullish Coalescing Operator](./src/es2020/nullish-coalescing-operator.js)
 * [Optional Chaining Operator](./src/es2020/optional-chaining-operator.js)
