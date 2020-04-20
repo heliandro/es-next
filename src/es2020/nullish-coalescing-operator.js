@@ -1,36 +1,28 @@
-let person = {
-	name: null,
-	age: null
-};
+/*
+* Nullish Coalescing Operator - the new operator (??) is intended to handle default values.
+*
+* Unlike operators like && and || that use the definition of "truthy", this operator
+* uses the definition of "nullish" (compares with strictly "null" or "undefined" values)
+*
+* Values false, 0, NaN and '' are all falsy values that are not nullish. The new operator is a good
+*  option to resolve these cases.
+*
+* */
 
-// Nullish coalescing operator
-console.log(`Person name is: ${ person.name ?? 'unknown' }`); // 'unknown'
-console.log(`\n${person.name} age is: ${ person.age ?? 'no age' }`); // 'no age'
+console.info('\nOR Operator:');
+
 // OR Operator
-console.log(`Person name is: ${ person.name || 'unknown' }`); // 'unknown'
-console.log(`${person.name} age is: ${ person.age || 'no age' }`); // 'no age'
+console.info( false || true ) // true
+console.info( 0 || 1 ) // 1
+console.info( null || {} ) // true
+console.info( undefined || [] ) // []
+console.info( '' || 'default' ) // 'default'
 
-person.name = '';
-person.age = 0;
-// Nullish coalescing operator
-console.log(`\nPerson name is: ${ person.name ?? 'unknown' }`); // ''
-console.log(`\n${person.name} age is: ${ person.age ?? 'no age' }`); // 0
-// OR operator
-console.log(`Person name is: ${ person.name || 'unknown' }`); // 'unknown'
-console.log(`${person.name} age is: ${ person.age || 'no age' }`); // 'no age'
+console.info('\nNullish Coalescing Operator:');
 
-person.name = 'Heliandro';
-person.age = 1;
-// Nullish coalescing operator
-console.log(`\nPerson name is: ${ person.name ?? 'unknown' }`); // 'Heliandro'
-console.log(`\n${person.name} age is: ${ person.age ?? 'no age' }`); // 1
-// OR operator
-console.log(`Person name is: ${ person.name || 'unknown' }`); // 'Heliandro'
-console.log(`${person.name} age is: ${ person.age || 'no age' }`); // 1
-
-
-
-
-
-
-
+// Nullish Coalescing Operator
+console.info( false ?? true ) // false
+console.info( 0 ?? 1 ) // 0
+console.info( null ?? {} ) // {}
+console.info( undefined ?? [] ) // []
+console.info( '' ?? 'default' ) // ''

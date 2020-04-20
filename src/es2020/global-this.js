@@ -1,3 +1,11 @@
+/*
+* Global This - In the past we needed to use objects like the "window" to access the  "global this", now we have a
+* new standard, the "global this". With "global this" we can access some global properties such as "window" in
+* Browser and "process" in Node.js
+*
+* To access the global this, you must use the globalThis object.
+* */
+
 const theGlobalThis = globalThis;
 
 if (globalThis.window) {
